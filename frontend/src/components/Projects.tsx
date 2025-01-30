@@ -9,7 +9,7 @@ const Projects: React.FC = () => {
 
   const categories = ["Highlighted", "All Projects"];
 
-  const placeholderImage = "https://placehold.co/600";
+  // const placeholderImage = "https://placehold.co/600";
 
   const projects = [
     {
