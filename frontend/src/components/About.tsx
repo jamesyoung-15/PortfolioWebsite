@@ -9,6 +9,7 @@ import {
 import {
   faEnvelope,
   faBlog,
+  faFileLines,
 } from "@fortawesome/free-solid-svg-icons";
 import { schoolLogos, certLogos, skillLogos } from "../assets/logos";
 
@@ -124,14 +125,6 @@ const About: React.FC = () => {
                 Boston University. I completed my Bachelors of Engineering in
                 Electronic Engineering at HKUST.
               </p>
-              {/* <a
-                href="https://resume.jyyhomelab.com/"
-                target="_blank"
-                className="bg-violet-400 hover:bg-violet-300 text-gray-800 font-bold py-2 px-4 rounded inline-flex items-center mt-5 mb-5 max-w-[200px] mx-auto"
-              >
-                <FontAwesomeIcon icon={faFileLines} className="mr-2" />
-                <span>Resume</span>
-              </a> */}
               <p className="my-3 md:my-5">
                 In my free time, I enjoy building projects, building PCs and
                 servers, tinkering with electronics and my homelab, and playing
@@ -148,12 +141,20 @@ const About: React.FC = () => {
                     key={index}
                     href={link.link}
                     target="_blank"
-                    className="mx-2 mt-5 rounded-full text-blue-400 hover:text-purple-300"
+                    className="mx-2 mt-5 rounded text-blue-400 hover:text-white"
                   >
                     <FontAwesomeIcon icon={link.icon} className="text-[20px]" />
                   </a>
                 ))}
               </div>
+              <a
+                href="https://resume.jyyhomelab.com/"
+                target="_blank"
+                className="bg-blue-400 hover:bg-violet-600 hover:text-white text-black text-base font-bold py-2 px-4 rounded inline-flex items-center mt-5 mb-5 max-w-[200px] mx-auto"
+              >
+                <FontAwesomeIcon icon={faFileLines} className="mr-2" />
+                <span>Resume</span>
+              </a>
             </div>
           </div>
         )}

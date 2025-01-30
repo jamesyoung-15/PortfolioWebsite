@@ -6,10 +6,7 @@ import {
   useAnimations,
   useVideoTexture,
 } from "@react-three/drei";
-import {
-  MirroredRepeatWrapping,
-  RepeatWrapping,
-} from "three";
+import { MirroredRepeatWrapping, RepeatWrapping } from "three";
 
 const GLBModel = () => {
   // Load the GLB model and animations
@@ -21,7 +18,7 @@ const GLBModel = () => {
   const { actions } = useAnimations(animations, groupRef);
 
   // Create a video texture
-  const videoTexture = useVideoTexture('/FaceTextures.mp4');
+  const videoTexture = useVideoTexture("/FaceTextures.mp4");
 
   // scale the video texture to fit the model
   videoTexture.wrapS = MirroredRepeatWrapping;
@@ -33,7 +30,7 @@ const GLBModel = () => {
   // Replace the material's texture map with the video texture for face
   useEffect(() => {
     if (materials.MatrixDisplay) {
-    // @ts-ignore: Property 'map' does not exist on type 'Material'.
+      // @ts-ignore: Property 'map' does not exist on type 'Material'.
       materials.MatrixDisplay.map = videoTexture;
 
       materials.MatrixDisplay.needsUpdate = true;

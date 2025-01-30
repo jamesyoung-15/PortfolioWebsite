@@ -1,5 +1,5 @@
 provider "aws" {
-  region = var.aws_region
+  region  = var.aws_region
   profile = var.aws_profile
 }
 
@@ -8,7 +8,7 @@ provider "cloudflare" {
 }
 
 resource "aws_s3_bucket" "site_bucket" {
-  bucket = "${var.site_domain}"
+  bucket = var.site_domain
 }
 
 resource "aws_s3_bucket_public_access_block" "site_public_access" {
@@ -70,15 +70,15 @@ resource "aws_s3_bucket_policy" "site_bucket_policy" {
 }
 
 data "cloudflare_zones" "domain" {
-    filter {
-        name = var.site_domain
-    }
+  filter {
+    name = var.site_domain
+  }
 }
 
 
 resource "cloudflare_record" "site_cname" {
   zone_id = data.cloudflare_zones.domain.zones[0].id
-  name    = "${var.site_domain}"
+  name    = var.site_domain
   value   = aws_s3_bucket_website_configuration.site_bucket_website_config.website_endpoint
   type    = "CNAME"
 
