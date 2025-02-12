@@ -117,8 +117,8 @@ const About: React.FC = () => {
             <div className="flex flex-col mx-2">
               <p className="">
                 I'm a passionate problem solver who enjoys tinkering with
-                various technologies and programming. My knowledge includes
-                software development, cloud technologies, and Linux (NixOS btw).
+                various technologies and programming. My interests includes
+                data science, machine learning, software development, cloud technologies, and Linux (NixOS btw).
               </p>
               <p className="my-3 md:my-5">
                 Currently, I am studying for Masters in Computer Science at
@@ -126,9 +126,8 @@ const About: React.FC = () => {
                 Electronic Engineering at HKUST.
               </p>
               <p className="my-3 md:my-5">
-                In my free time, I enjoy building projects, building PCs and
-                servers, tinkering with electronics and my homelab, and playing
-                video games. You can check out my projects below and my blog for
+                In my free time, I enjoy building PCs and
+                servers, tinkering with electronics and my homelab, making projects, video games, and football (soccer). You can check out my projects below and my blog for
                 my hobby projects and homelab.
               </p>
               <p className="mt-4 md:my-5">

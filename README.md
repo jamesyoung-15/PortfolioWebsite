@@ -5,3 +5,9 @@ My portfolio website [jyyoung.com](https://jyyoung.com). Written in React, Tailw
 ## Preview
 
 ![https://jyyoung.com](./media/portfolio-preview.png)
+
+## Build
+
+Clone repo, `npm run build`, `npx serve -s dist`.
+
+To deploy with S3, use Terraform, sync to S3 static bucket.

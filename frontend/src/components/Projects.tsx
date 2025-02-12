@@ -55,12 +55,26 @@ const Projects: React.FC = () => {
       ],
     },
     {
+      categories: ["Data Science", "Machine Learning"],
+      title: "Skin Lesion Classifion",
+      description:
+        "A skin lesion classification model with pseudo-Labeling for semi-supervised learning. Trained and tested on the ISIC 2016 and 2017 datasets. Achieved 81% accuracy and 80% AUC.",
+      tags: ["Python", "Pytorch"],
+      image: projectImages.skinLesion, // Replace with project image
+      links: [
+        {
+          icon: faGithub,
+          url: "https://github.com/jamesyoung-15/skin-lesion-classification",
+        },
+      ],
+    },
+    {
       categories: ["Web"],
       title: "Portfolio Website",
       description:
         "A personal portfolio website written with React Typescript, TailwindCSS, ThreeJS. Deployed with Terraform and hosted AWS. Models are created and animated with Blender.",
       tags: ["React", "TailwindCSS", "ThreeJS", "Terraform"],
-      image: projectImages.portfolioDemo, // Replace with your project image
+      image: projectImages.portfolioDemo, // Replace with project image
       links: [
         { icon: faExternalLinkAlt, url: "https://jyyoung.com" },
         {
