@@ -13,6 +13,27 @@ const Projects: React.FC = () => {
 
   const projects = [
     {
+      categories: ["Data Science", "Machine Learning", "Highlighted"],
+      title: "Bluebikes Availability Predictor",
+      description:
+        `An application that forecasts the number of Bluebikes that will be available at 3 stations near my apartment in Boston using machine learning. 
+        Model trained with Bluebikes historical trip histories and weather data.
+        Frontend built with React, backend with Flask, and deployed with Docker on EC2.
+        `,
+      tags: ["Python", "Scikit-Learn", "Pandas", "Flask", "AWS"],
+      image: projectImages.bluebikespredictor, // Replace with project image
+      links: [
+        {
+          icon: faGithub,
+          url: "https://github.com/jamesyoung-15/Bluebikes-Availability-Predictor",
+        },
+        {
+          icon: faExternalLinkAlt,
+          url: "https://bluebikespredictor.jyylab.com",
+        }
+      ],
+    },
+    {
       categories: ["Highlighted"],
       title: "Serverless Face Blurring",
       description: `An event-driven serverless application for automatically detecting and blurring faces in images with AWS services. 
@@ -51,20 +72,6 @@ const Projects: React.FC = () => {
         {
           icon: faGithub,
           url: "https://github.com/jamesyoung-15/Mini-Robot-Cleaner",
-        },
-      ],
-    },
-    {
-      categories: ["Data Science", "Machine Learning"],
-      title: "Skin Lesion Classifion",
-      description:
-        "A skin lesion classification model with pseudo-Labeling for semi-supervised learning. Trained and tested on the ISIC 2016 and 2017 datasets. Achieved 81% accuracy and 80% AUC.",
-      tags: ["Python", "Pytorch"],
-      image: projectImages.skinLesion, // Replace with project image
-      links: [
-        {
-          icon: faGithub,
-          url: "https://github.com/jamesyoung-15/skin-lesion-classification",
         },
       ],
     },
