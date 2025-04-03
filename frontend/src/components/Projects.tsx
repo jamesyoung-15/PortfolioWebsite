@@ -55,16 +55,17 @@ const Projects: React.FC = () => {
       description: `A homelab setup with Proxmox with various VMs, LXCs, and Docker containers for self-hosting services such as NAS, media server, etc. 
                       Uses Opnsense for setting up networking such as firewall, router, VLans, etc. Hand-built servers with consumer PC hardware.`,
       tags: ["Linux", "Docker", "Virtualization", "Networking"],
-      image: projectImages.homeLab,
+      image: projectImages.homeLab1,
       links: [
         { icon: faGithub, url: "https://github.com/jamesyoung-15/homelab" },
+        { icon: faExternalLinkAlt, url: "https://jyyhomelab.com/" }
       ],
     },
     {
       categories: ["Embedded", "Highlighted", "Robotics"],
       title: "STM32 Mini-Robot Cleaner",
       description:
-        "An autonomous mini-robot cleaner built with STM32 microcontroller and C. Features remote control using UDP with Python GUI and autonomous mode with obstacle avoidance using bubble rebound algorithm. Done as school project.",
+        "An autonomous mini-robot cleaner built with STM32 microcontroller, C, and Python. Features remote control using UDP with Python GUI and autonomous mode with obstacle avoidance using bubble rebound algorithm. Done as school project.",
       tags: ["C", "STM32", "Python"],
       image: projectImages.robotCleaner,
       links: [
