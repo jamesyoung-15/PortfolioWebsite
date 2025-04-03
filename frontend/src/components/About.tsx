@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import myAvatar from "../assets/my-photo.png";
+import myAvatar from "../assets/my-photo-2.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faGithub,
@@ -30,7 +30,7 @@ const About: React.FC = () => {
     { logo: skillLogos.reactLogo, description: "React" },
     { logo: skillLogos.htmlLogo, description: "HTML/CSS" },
     { logo: skillLogos.nodeLogo, description: "Node.js" },
-    { logo: skillLogos.mysqlLogo, description: "MySQL" },
+    { logo: skillLogos.mysqlLogo, description: "SQL" },
     { logo: skillLogos.bashLogo, description: "Bash" },
     { logo: skillLogos.gitLogo, description: "Git" },
     { logo: skillLogos.tfLogo, description: "Terraform" },
@@ -58,12 +58,12 @@ const About: React.FC = () => {
       description: "Terraform Associate 003",
       href: "https://www.credly.com/badges/c4870f16-cb84-4e8d-afe5-0384d756a66c/public_url",
     },
-    {
-      logo: certLogos.comptiaALogo,
-      title: "CompTia A+",
-      description: "Expected Completion: Before April 2025",
-      href: "https://www.comptia.org/certifications/a",
-    },
+    // {
+    //   logo: certLogos.comptiaALogo,
+    //   title: "CompTia A+",
+    //   description: "Expected Completion: Before April 2025",
+    //   href: "https://www.comptia.org/certifications/a",
+    // },
   ];
 
   const education = [
@@ -93,7 +93,7 @@ const About: React.FC = () => {
         <img
           src={myAvatar}
           alt="James"
-          className="scale-105 object-cover object-center"
+          className="scale-105 object-cover object-center ml-2"
         />
       </div>
       <div className="flex flex-col min-h-100 max-[480px]:mx-5 min-h-[600px] max-[800px]:mx-5">
@@ -117,8 +117,8 @@ const About: React.FC = () => {
             <div className="flex flex-col mx-2">
               <p className="">
                 I'm a passionate problem solver who enjoys tinkering with
-                various technologies and programming. My interests includes
-                data science, machine learning, software development, cloud technologies, and Linux (NixOS btw).
+                various technologies and programming. My interests includes 
+                software development, cloud technologies, data science, and Linux (NixOS btw).
               </p>
               <p className="my-3 md:my-5">
                 Currently, I am studying for Masters in Computer Science at
