@@ -15,8 +15,7 @@ const Projects: React.FC = () => {
     {
       categories: ["Data Science", "Machine Learning", "Highlighted"],
       title: "Bluebikes Availability Predictor",
-      description:
-        `An application that forecasts the number of Bluebikes that will be available at 3 stations near my apartment in Boston using machine learning. 
+      description: `An application that forecasts the number of Bluebikes that will be available at 3 stations near my apartment in Boston using machine learning. 
         Model trained with Bluebikes historical trip histories and weather data.
         Frontend built with React, backend with Flask, and deployed with Docker on EC2.
         `,
@@ -30,7 +29,7 @@ const Projects: React.FC = () => {
         {
           icon: faExternalLinkAlt,
           url: "https://bluebikespredictor.jyylab.com",
-        }
+        },
       ],
     },
     {
@@ -58,7 +57,7 @@ const Projects: React.FC = () => {
       image: projectImages.homeLab1,
       links: [
         { icon: faGithub, url: "https://github.com/jamesyoung-15/homelab" },
-        { icon: faExternalLinkAlt, url: "https://jyyhomelab.com/" }
+        { icon: faExternalLinkAlt, url: "https://jyyhomelab.com/" },
       ],
     },
     {

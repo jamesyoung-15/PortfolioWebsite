@@ -19,3 +19,21 @@ h5,
 h6 {
   font-family: "General Sans", sans-serif;
 }
+
+@layer base {
+  /* 1) define the keyframes */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  /* 2) apply them to the root container */
+  #root {
+    opacity: 0; /* start invisible */
+    animation: fadeIn 700ms ease-out forwards;
+  }
+}

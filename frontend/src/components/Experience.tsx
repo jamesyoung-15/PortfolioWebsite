@@ -3,6 +3,18 @@ import React from "react";
 const Experience: React.FC = () => {
   const experiences = [
     {
+      title: "Software Engineer Intern",
+      company: "Granite Telecommunications",
+      location: "Quincy, MA, USA",
+      duration: "June 2025 - Aug 2025",
+      description: [
+        "Ongoing summer internship at Granite Telecommunications, focusing on automating builds and validation to Granite's Linux edge devices for internal developers.",
+        "Used Python scripts to automate build and validations, reducing manual testing time.",
+      ],
+      companyLink: "https://www.granitenet.com/",
+      tags: ["Python", "Linux"],
+    },
+    {
       title: "Software Developer Intern",
       company: "Intelligent Design Technology Limited",
       location: "Hong Kong",

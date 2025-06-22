@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import myAvatar from "../assets/my-photo-2.png";
+import myAvatar from "../assets/myphoto.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faGithub,
@@ -88,12 +88,12 @@ const About: React.FC = () => {
       className="text-white rounded container mx-auto flex flex-col items-center -mt-40 [@media(max-height:900px)]:-mt-2"
       id="about"
     >
-      <h2 className="text-4xl font-bold mb-10">About Me</h2>
+      {/* <h2 className="text-4xl font-bold mb-10">About Me</h2> */}
       <div className="overflow-hidden rounded-full lg:w-85 lg:h-85 h-64 w-64 mb-10 bg-slate-300">
         <img
           src={myAvatar}
           alt="James"
-          className="scale-105 object-cover object-center ml-2"
+          className="scale-105 object-cover object-center"
         />
       </div>
       <div className="flex flex-col min-h-100 max-[480px]:mx-5 min-h-[600px] max-[800px]:mx-5">
@@ -117,8 +117,9 @@ const About: React.FC = () => {
             <div className="flex flex-col mx-2">
               <p className="">
                 I'm a passionate problem solver who enjoys tinkering with
-                various technologies and programming. My interests includes 
-                software development, cloud technologies, data science, and Linux (NixOS btw).
+                various technologies and programming. My interests includes
+                software development, cloud technologies, data science, and
+                Linux (NixOS btw).
               </p>
               <p className="my-3 md:my-5">
                 Currently, I am studying for Masters in Computer Science at
@@ -126,9 +127,10 @@ const About: React.FC = () => {
                 Electronic Engineering at HKUST.
               </p>
               <p className="my-3 md:my-5">
-                In my free time, I enjoy building PCs and
-                servers, tinkering with electronics and my homelab, making projects, video games, and football (soccer). You can check out my projects below and my blog for
-                my hobby projects and homelab.
+                In my free time, I enjoy building PCs and servers, tinkering
+                with electronics and my homelab, making projects, video games,
+                and football (soccer). You can check out my projects below and
+                my blog for my hobby projects and homelab.
               </p>
               <p className="mt-4 md:my-5">
                 Feel free to find me or contact me through any of the ways

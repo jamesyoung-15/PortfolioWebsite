@@ -1,15 +1,15 @@
 import React from "react";
 import { TypeAnimation } from "react-type-animation";
-import RobotHero from "./RobotHero";
+// import RobotHero from "./RobotHero";
 
 const Hero: React.FC = () => {
   return (
-    <section className="flex flex-col items-center mt-25 text-white">
+    <section className="flex flex-col items-center mt-25 text-white mb-50">
       <div className="text-center">
         <h1 className="text-4xl md:text-6xl font-bold">
           Hello, my name is James!
         </h1>
-        <h2 className="text-3xl md:text-5xl mt-3">
+        <h2 className="text-3xl md:text-5xl mt-3 mb-5">
           I am a{" "}
           <TypeAnimation
             sequence={[
@@ -28,7 +28,7 @@ const Hero: React.FC = () => {
         </h2>
       </div>
       {/* three js scene */}
-      <RobotHero />
+      {/* <RobotHero /> */}
     </section>
   );
 };
