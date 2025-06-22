@@ -4,7 +4,7 @@ import { TypeAnimation } from "react-type-animation";
 
 const Hero: React.FC = () => {
   return (
-    <section className="flex flex-col items-center mt-25 text-white mb-50">
+    <section className="flex flex-col items-center mt-25 text-white h-80">
       <div className="text-center">
         <h1 className="text-4xl md:text-6xl font-bold">
           Hello, my name is James!

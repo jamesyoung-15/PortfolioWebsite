@@ -85,7 +85,8 @@ const About: React.FC = () => {
 
   return (
     <section
-      className="text-white rounded container mx-auto flex flex-col items-center -mt-40 [@media(max-height:900px)]:-mt-2"
+      className="text-white rounded container mx-auto flex flex-col items-center -mt-40"
+      // [@media(max-height:900px)]:-mt-2"
       id="about"
     >
       {/* <h2 className="text-4xl font-bold mb-10">About Me</h2> */}

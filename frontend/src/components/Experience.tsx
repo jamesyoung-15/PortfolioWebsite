@@ -53,7 +53,7 @@ const Experience: React.FC = () => {
               className="flex max-[800px]:flex-col items-start space-x-8 relative"
             >
               {/* Date Section */}
-              <div className="w-32 text-gray-400 text-sm relative mt-6 max-[800px]:mx-auto max-[800px]:mb-5">
+              <div className="w-40 text-gray-400 text-sm relative mt-6 max-[800px]:mx-auto max-[800px]:mb-5 text-center">
                 <p>{job.duration}</p>
               </div>
 
